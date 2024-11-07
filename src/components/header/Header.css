@@ -1,0 +1,9 @@
+.netflix-logo svg {
+    width: 150px;
+    fill: rgb(229, 9, 20);
+}
+
+option {
+    background: #fff;
+    color: #000;
+}
