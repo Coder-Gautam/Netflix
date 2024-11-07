@@ -1,5 +1,7 @@
 import React from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <>
@@ -43,16 +45,22 @@ const Header = () => {
                   ></path>
                 </svg>
               </div>
-              <select name="language" id="languages" className="bg-transparent font-sans">
+              <select
+                name="language"
+                id="languages"
+                className="bg-transparent font-sans"
+              >
                 <option value="English">English</option>
                 <option value="Hindi">Hindi</option>
               </select>
             </div>
           </span>
           <span className="sign-up login">
-            <button className="login-btn rounded-full bg-white text-black font-medium px-4 py-2 font-sans">
-              Sign In
-            </button>
+            <Link to="/login">
+              <button className="login-btn rounded-full bg-white text-black font-medium px-4 py-2 font-sans">
+                Sign In
+              </button>
+            </Link>
           </span>
         </div>
       </div>

@@ -10,13 +10,13 @@ const HeroSection = () => {
         </div>
         <div className="bg-inner absolute z-10">
           <div className="main-titles ">
-            <div className="main-heading">
-              <h1 className="main-title-of-home-page text-7xl font-black">
+            <div className="main-heading mb-2">
+              <h1 className="main-title-of-home-page text-6xl text-center font-black">
                 Unlimited movies, TV shows and more
               </h1>
             </div>
             <div className="sub-heading">
-              <h1 className="sub-title-of-home-page text-2xl font-sans">
+              <h1 className="sub-title-of-home-page text-2xl font-sans text-center">
                 Starts at ₹149. Cancel at any time.
               </h1>
             </div>

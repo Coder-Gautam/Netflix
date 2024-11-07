@@ -1,18 +1,19 @@
 import "./App.css";
-import Header from "./components/header/Header";
-import HeroSection from "./components/heroSection/HeroSection";
-import MailBtn from "./components/mail/MailBtn";
-import TrendingHeader from "./components/trendingHeader/TrendingHeader";
-import SimpleSlider from "./components/trendingSlider/TrendingSlider";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SignUpPage from "./pages/signUp/SignUpPage";
+import LoginPage from "./pages/LoginPage/LoginPage";
+import Home from "./pages/HomePage/Home";
 
 function App() {
   return (
     <>
-      <Header />
-      <HeroSection />
-      <MailBtn />
-      <TrendingHeader />
-      <SimpleSlider />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+        </Routes>
+      </Router>
     </>
   );
 }
